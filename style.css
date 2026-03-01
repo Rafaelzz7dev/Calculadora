@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+/*CORES*/
+:root{
+    --cor_forte: #090E73;
+    --cor_pouco_forte: #0511F2;
+    --cor_neutra: #3D46F2;
+    --cor_fraca: #8D92F2;
+    --cor_alternativo: #F27F3D;
+    
+
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: var(--cor_fraca);
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+header{
+    background-color: var(--cor_pouco_forte);
+    box-shadow: rgba(0, 0, 0, 0.415) 1px 3px 10px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+#calculadora{
+    display: flex;
+    background-color: rgb(45, 52, 58);
+    padding: 15px 0px;
+    border-radius: 10px;
+    width: 300px;
+    height: 500px;
+    box-shadow: rgba(0, 0, 0, 0.414) 10px 1px 10px;
+    align-items: end;
+    justify-content: center;
+    flex-flow: column ;
+}
+#calculo{
+    background-color: rgba(0, 0, 0, 0.407);
+    width: 280px;
+    height: 190px;
+    margin-bottom: 20px;
+    align-self: center;
+    border-radius: 10px;
+}
+#container{
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 250px;
+    height: 300px;
+    color: white;
+    gap: 5px;
+    
+}
+
+.tecla_preta{
+    grid-auto-flow: column;
+    text-align: center;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    transition-duration: 0.4s;
+}
+.operadores{
+    grid-auto-flow: column;
+    text-align: center;
+    border-radius: 15px;
+    background-color: var(--cor_alternativo);
+    color: white;
+    transition-duration: 0.4s;
+}
+
+.tecla_preta:hover, .operadores:hover{
+    background-color: var(--cor_fraca);
+    border: 1px solid white;
+}
+
+#ce{
+    grid-column: 1 / 3;
+    
+}
+#zero{
+    grid-column: 1 / 3;
+}
+
+footer{
+    background-color: var(--cor_neutra);
+    text-align: center;
+    color: lightgray;
+    padding: 20px;
+    margin-top: 30px;
+}
+footer a{
+    color: lightgray;
+    text-decoration: none;
+    transition: 0.4s;
+    font-weight: bold;
+}
+footer a:hover{
+    color: var(--cor_forte);
+}
