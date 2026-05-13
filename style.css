@@ -48,10 +48,16 @@ main{
     flex-flow: column ;
 }
 #calculo{
+    display: flex;
     background-color: rgba(0, 0, 0, 0.407);
-    width: 280px;
-    height: 190px;
-    margin-bottom: 20px;
+    color: white;
+    flex-direction: column-reverse;
+    text-align: end;
+    font-size: 50px;
+    width: 250px;
+    height: 170px;
+    padding: 10px;
+    margin-bottom: 10px;
     align-self: center;
     border-radius: 10px;
 }

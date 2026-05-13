@@ -16,36 +16,38 @@
     <main>
         <section id="calculadora">
 
-            <div id="calculo"></div>
+            <p id="calculo"></p>
 
             <article id="container">
-                <button class="tecla_preta" id="ce">CE</button>
-                <button class="tecla_preta" id="c">C</button>
-
-                <button class="operadores"  id="dividir"><i class="fa-solid fa-divide"></i></button>
-
-                <button class="tecla_preta" id="sete">7</button>
-                <button class="tecla_preta" id="oito">8</button>
-                <button class="tecla_preta" id="nove">9</button>
-
-                <button class="operadores"  id="multi"><i class="fa-solid fa-xmark"></i></button>
-
-                <button class="tecla_preta" id="quatro">4</button>
-                <button class="tecla_preta" id="cinco">5</button>
-                <button class="tecla_preta" id="seis">6</button>
                 
-                <button class="operadores"  id="subtrair"><i class="fa-solid fa-minus"></i></button>
+                <button class="tecla_preta" id="ce" onclick="apagar()">Ce</button>
 
-                <button class="tecla_preta" id="um">1</button>
-                <button class="tecla_preta" id="dois">2</button>
-                <button class="tecla_preta" id="tres">3</button>
+                <button class="tecla_preta" id="c" onclick="limpar()">C</button>
 
-                <button class="operadores"  id="soma"><i class="fa-solid fa-plus"></i></button>
+                <button class="operadores"  id="dividir" onclick="insert('/')"><i class="fa-solid fa-divide"></i></button>
+
+                <button class="tecla_preta" id="sete" onclick="insert('7')">7</button>
+                <button class="tecla_preta" id="oito" onclick="insert('8')">8</button>
+                <button class="tecla_preta" id="nove" onclick="insert('9')">9</button>
+
+                <button class="operadores"  id="multi" onclick="insert('*')"><i class="fa-solid fa-xmark"></i></button>
+
+                <button class="tecla_preta" id="quatro" onclick="insert('4')">4</button>
+                <button class="tecla_preta" id="cinco" onclick="insert('5')">5</button>
+                <button class="tecla_preta" id="seis" onclick="insert('6')">6</button>
                 
-                <button class="tecla_preta" id="zero">0</button>
-                <button class="tecla_preta" id="virgula">,</button>
+                <button class="operadores"  id="subtrair" onclick="insert('-')"><i class="fa-solid fa-minus"></i></button>
 
-                <button class="operadores"  id="resultado"><i class="fa-solid fa-equals"></i></button>
+                <button class="tecla_preta" id="um" onclick="insert('1')">1</button>
+                <button class="tecla_preta" id="dois" onclick="insert('2')">2</button>
+                <button class="tecla_preta" id="tres" onclick="insert('3')">3</button>
+
+                <button class="operadores"  id="soma"><i class="fa-solid fa-plus" onclick="insert('+')"></i></button>
+                
+                <button class="tecla_preta" id="zero" onclick="insert('0')">0</button>
+                <button class="tecla_preta" id="virgula"  onclick="insert('.')">.</button>
+
+                <button class="operadores"  id="resultado" onclick="calcular()"><i class="fa-solid fa-equals"></i></button>
             </article>
 
         </section>
@@ -56,5 +58,6 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/c1abd86632.js" crossorigin="anonymous"></script>
+    <script src="calculadora.js"></script>
 </body>
 </html>
